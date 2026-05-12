@@ -1,0 +1,119 @@
+/* =====================
+   기본 설정
+===================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  background: #f7f7f9;
+  color: #222;
+}
+
+/* =====================
+   헤더
+===================== */
+header {
+  background: linear-gradient(135deg, #ff2a87, #ff6da8);
+  color: white;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+header .logo {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+header h1 {
+  font-size: 40px;
+  margin: 0 0 10px;
+}
+
+header p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* =====================
+   메인 영역
+===================== */
+main {
+  max-width: 960px;
+  margin: -40px auto 60px;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+/* =====================
+   카드
+===================== */
+.card {
+  background: white;
+  border-radius: 18px;
+  padding: 28px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 22px;
+  color: #ff2a87;
+}
+
+.card p {
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* =====================
+   상세 페이지 박스
+===================== */
+.content {
+  max-width: 900px;
+  background: white;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.content h2 {
+  color: #ff2a87;
+  margin-top: 0;
+}
+
+.content ul,
+.content ol {
+  padding-left: 20px;
+}
+
+.content li {
+  margin-bottom: 10px;
+  line-height: 1.7;
+}
+
+/* =====================
+   푸터
+===================== */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: #777;
+  font-size: 14px;
+}
